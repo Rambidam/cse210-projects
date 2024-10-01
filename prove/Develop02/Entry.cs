@@ -8,27 +8,22 @@ public class Entry
 {
     public string _date { get; set; }
     public string _promptText { get; set; }
-
     public string _entryText { get; set; }
-    public void Display()
+    public void Display(Journal journal)
     {
         PromptGenerator promptGenerator = new PromptGenerator();
-        string randomPrompt = promptGenerator.GetRandomPrompt(promptGenerator._prompts);
+        string _randomPrompt = promptGenerator.GetRandomPrompt(promptGenerator._prompts);
 
         Entry newEntry = new Entry();
 
-        Console.WriteLine(randomPrompt);
-        newEntry._promptText = randomPrompt;
-        Console.WriteLine("Enter your input here: ");
-        newEntry._entryText = Console.ReadLine();
-        newEntry._date = DateTime.Now.ToString();
+        Console.WriteLine(_randomPrompt);
+            newEntry._promptText = _randomPrompt;
+        Console.Write("Enter your input here: ");
+            newEntry._entryText = Console.ReadLine();
+            newEntry._date = DateTime.Now.ToString();
 
-        Journal journal = new Journal();
-        journal._entries.Add(newEntry);
-        journal.SaveToFile(journal._entries);
+            journal._entries.Add(newEntry);
 
-
+        Console.WriteLine($"Number of entries: {journal._entries.Count}");
     }
 }
-    
-          
