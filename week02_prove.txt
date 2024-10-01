@@ -1,0 +1,28 @@
+Explain the meaning of Abstraction
+
+Abstraction is a concept or type of object-oriented programming (OOP) that uses member variables and methods to define the structure of a class. A class is like a blueprint that provides the template for
+your code. This concept of abstraction is designed to simplify the approach in computer programming. 
+
+_____________________________________________________________________________________________
+
+Highlight a benefit of Abstraction
+
+One great benefit of abstraction is how it simplifies your code so you do not have to input each variable and function, but simply use the class or instantiate an object to access the attributes 
+and methods from another file.
+
+_____________________________________________________________________________________________
+
+Provide an application of Abstraction
+
+We can significantly apply the concept of abstraction in a large scale of coding projects, as it greatly helps to enhance the modularity and simplicity of your code. 
+
+_____________________________________________________________________________________________
+
+Use a code example of Abstraction from the program you wrote
+
+public Entry entry = new Entry();
+
+This statement is written to instantiate an object from Entry class, which will then give access to its accompanying member variables and functions. 
+
+
+
